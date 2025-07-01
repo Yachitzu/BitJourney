@@ -45,8 +45,6 @@
 
 ## 📱 Capturas de Pantalla
 
-## 📱 Capturas de Pantalla
-
 A continuación se presentan algunas pantallas clave de **BitJourney**:
 
 <table>
