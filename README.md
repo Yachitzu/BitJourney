@@ -45,8 +45,31 @@
 
 ## 📱 Capturas de Pantalla
 
-> *Pantalla de carga*  
-> ![Pantalla de Carga](./screenshots/PantallaCarga.jpeg)
+## 📱 Capturas de Pantalla
+
+A continuación se presentan algunas pantallas clave de **BitJourney**:
+
+<table>
+  <tr>
+    <td align="center"><b>Pantalla de carga</b></td>
+    <td align="center"><b>Registro de usuario</b></td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/PantallaCarga.jepg" width="200"/></td>
+    <td><img src="./screenshots/Registro.jepg" width="200"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Login</b></td>
+    <td align="center"><b>Página principal</b></td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/login.jpeg" width="200"/></td>
+    <td><img src="./screenshots/PantallaPrincipal.jepg" width="200"/></td>
+  </tr>
+</table>
+
+
+
 
 ---
 
@@ -56,6 +79,6 @@
 - Android Studio instalado
 - Cuenta Firebase configurada
 
-1. Clona el repositorio:
+## Clona el repositorio:
    ```bash
    git clone https://github.com/Yachitzu/BitJourney.git
