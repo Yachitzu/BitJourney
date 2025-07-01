@@ -55,8 +55,8 @@ A continuación se presentan algunas pantallas clave de **BitJourney**:
     <td align="center"><b>Registro de usuario</b></td>
   </tr>
   <tr>
-    <td><img src="./screenshots/PantallaCarga.jepg" width="200"/></td>
-    <td><img src="./screenshots/Registro.jepg" width="200"/></td>
+    <td><img src="./screenshots/PantallaCarga.jpeg" width="200"/></td>
+    <td><img src="./screenshots/Registro.jpeg" width="200"/></td>
   </tr>
   <tr>
     <td align="center"><b>Login</b></td>
@@ -64,7 +64,7 @@ A continuación se presentan algunas pantallas clave de **BitJourney**:
   </tr>
   <tr>
     <td><img src="./screenshots/login.jpeg" width="200"/></td>
-    <td><img src="./screenshots/PantallaPrincipal.jepg" width="200"/></td>
+    <td><img src="./screenshots/PantallaPrincipal.jpeg" width="200"/></td>
   </tr>
 </table>
 
