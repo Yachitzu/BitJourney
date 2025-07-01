@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BitJouney</string>
+    <string name="channel_name">Hey</string>
+    <string name="channel_description">Descripción del Canal</string>
+</resources>

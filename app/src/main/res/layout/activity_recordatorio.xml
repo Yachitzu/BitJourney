@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20sp"
+    android:paddingTop="50sp"
+    android:paddingRight="20sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Recordatorios"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextReminderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:hint="Ingresa un nombre para el recordatorio"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp" />
+
+    <TimePicker
+        android:id="@+id/timePickerReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="361dp"
+        android:layout_below="@id/editTextReminderName"
+        android:amPmTextColor="@color/white"
+        android:foregroundTint="#000000" />
+
+    <!-- RadioGroup para los CheckBox -->
+    <RadioGroup
+        android:id="@+id/radioGroupFrequency"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioDiario"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:text="Diario" />
+
+        <RadioButton
+            android:id="@+id/radioSemanal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="Semanal" />
+
+        <RadioButton
+            android:id="@+id/radioMensual"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="Mensual" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/buttonSetReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:backgroundTint="#101010"
+        android:fontFamily="@font/poppins"
+        android:text="Establecer recordatorio" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#f4dfcd"
+        android:fontFamily="@font/poppins"
+        android:onClick="RegresarPrincipal"
+        android:paddingLeft="60sp"
+        android:paddingRight="60sp"
+        android:text="Regresar"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <!-- TextView para mostrar la frecuencia seleccionada -->
+</LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

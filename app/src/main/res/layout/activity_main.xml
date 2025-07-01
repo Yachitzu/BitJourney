@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1ECE7"
+        android:orientation="vertical"
+        android:paddingLeft="40px"
+        android:paddingTop="50px"
+        android:paddingRight="40px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:background="@android:drawable/editbox_background"
+            android:clickable="true"
+            android:onClick="mostrarDialogoConfirmacion"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="259dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Bienvenid@ de Nuevo "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:srcCompat="@drawable/black_user"
+                tools:srcCompat="@drawable/black_user" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_horizontal"
+            android:text="¿En qué estas pensando Hoy?"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="302dp"
+            android:clickable="false"
+            android:dateTextAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="10px"
+                    android:layout_marginRight="50px"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:backgroundTint="#111111"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="abrirRegistroAgenda"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="428dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Agregar una nueva Entrada"
+                        android:textColor="#FFFFFF" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="73dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/mas" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:backgroundTint="#111111"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="abrirLista"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="425dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Entradas"
+                        android:textColor="#FFFFFF" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="73dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:scaleX="2"
+                        android:scaleY="2"
+                        app:srcCompat="@drawable/list_white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:layout_marginBottom="40px"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:backgroundTint="#111111"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="abrirRecordatorio"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="425dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Recordatorios"
+                        android:textColor="#FFFFFF" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70sp"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:scaleX="2"
+                        android:scaleY="2"
+                        app:srcCompat="@drawable/bell_circle_white" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
